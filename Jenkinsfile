@@ -4,9 +4,9 @@ pipeline {
     stages {
         stage('Deploy') {
             steps {
-                sshagent(['8b85a1b0-1877-4397-b458-e0b73125b6fe']) {
+                sshagent(['41acdb23-f798-4c7c-86d1-3126b5f82bda']) {
                     sh '''
-                        ssh -o StrictHostKeyChecking=no ubuntu@54.82.22.211 << 'EOF'
+                        ssh -o StrictHostKeyChecking=no ubuntu@98.94.82.118 << 'EOF'
 
                         echo "Connected to EC2"
 
