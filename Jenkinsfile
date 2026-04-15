@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Deploy') {
             steps {
-                sshagent(['8cd4e9af-2e87-427e-be9e-fd69ef508f94']) {
+                sshagent(['34d9a865-ab04-47c9-b199-1a378442d7d6']) {
                     sh '''
                         ssh -o StrictHostKeyChecking=no ubuntu@54.82.22.211 << 'EOF'
 
